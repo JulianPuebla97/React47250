@@ -1,0 +1,59 @@
+/* ProductGrid.css */
+/* ProductGrid.css */
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;;
+    align-items: center;
+    margin:1rem;
+    padding:1rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    /* Las imágenes se ajustarán al 100% del ancho del cuadro */
+    max-height: 200px;
+    /* Altura máxima para las imágenes */
+    object-fit: contain;
+    /* Mantiene la relación de aspecto y ajusta la imagen dentro del cuadro */
+}
+
+
+.product-name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #ff6600;
+    font-size: 16px;
+}
+
+.detalles-product,
+.add-to-cart-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.detalles-product:hover,
+.add-to-cart-button:hover {
+    background-color: #e65500;
+}

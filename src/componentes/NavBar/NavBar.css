@@ -21,12 +21,10 @@
     padding: 10px 20px;
 }
 
-.logo {
-    font-size: 20px;
-    text-transform: uppercase;
-    background-color: #353433;
-    border: double rgb(253, 253, 253);
-    border-radius: 5px;
+.imglogo {
+    width: 5rem;
+    border-radius: 10px;
+
 }
 
 .nav-links {
