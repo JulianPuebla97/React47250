@@ -1,19 +1,35 @@
-import React, { useState } from 'react';
+// Navbar.jsx
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 50; 
+            if (isScrolled !== scrolled) {
+                setScrolled(isScrolled);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrolled]);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-
     return (
         <header>
-            <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
+            <nav className={`navbar ${menuOpen ? 'open' : ''}${scrolled ? ' scrolled' : ''}`}>
                 <div className="container">
                     <Link to="/">
                         <img src={"../img/logo.png"} alt="Logo Rx" className='imglogo'/>

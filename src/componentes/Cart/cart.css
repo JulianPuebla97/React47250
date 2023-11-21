@@ -1,0 +1,36 @@
+/* Cart.css */
+.carrito-check {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    margin-top: 110px;
+}
+
+.carrito-inicio {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.total,
+.cantidad-total {
+    margin-top: 10px;
+}
+
+.button-vaciar,
+.button-finalizar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.button-finalizar a {
+    color: white;
+    text-decoration: none;
+}

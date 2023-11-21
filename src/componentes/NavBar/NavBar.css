@@ -1,6 +1,8 @@
 /* Navbar.css */
+header {
+    background-color: #333;
+}
 
-/* Estilos para pantallas más grandes (no móviles) */
 .navbar {
     background-color: #333;
     color: #fff;
@@ -10,6 +12,12 @@
     width: 100%;
     z-index: 100;
     transition: transform 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #222;
+    /* Puedes ajustar el color al hacer scroll */
+    transition: background-color 0.3s ease-in-out;
 }
 
 .container {
@@ -24,7 +32,6 @@
 .imglogo {
     width: 5rem;
     border-radius: 10px;
-
 }
 
 .nav-links {
@@ -47,11 +54,38 @@ ul li {
 ul li:last-child {
     margin-right: 0;
 }
-ul li:hover{
-    background-color: #ff6600;
-    border-radius: 5px;
+
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6600;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 .menu-icon {
     display: none;
@@ -83,7 +117,6 @@ ul li:hover{
 /* Estilos para pantallas móviles */
 @media (max-width: 768px) {
     .navbar {
-        
         background-color: #333;
     }
 

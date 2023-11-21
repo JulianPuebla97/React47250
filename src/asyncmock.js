@@ -5,6 +5,7 @@ const misproductos = [
         nombre: 'Calleras Cobra',
         precio: '$7500',
         img : "https://http2.mlstatic.com/D_NQ_NP_2X_934676-MLA51656385026_092022-F.webp",
+        stock: "30",
         idCat:"2"
     },
     {
@@ -12,6 +13,7 @@ const misproductos = [
         nombre: 'Muñequeras PowerGrip',
         precio: '$3500',
         img: "https://http2.mlstatic.com/D_NQ_NP_2X_647342-MLA71259058204_082023-F.webp",
+        stock: "30",
         idCat:"2"
     },
     {
@@ -19,6 +21,7 @@ const misproductos = [
         nombre: 'Soga Speed Rope Aluminio',
         precio: '$5000',
         img: "https://http2.mlstatic.com/D_NQ_NP_2X_785701-MLA70710107242_072023-F.webp",
+        stock: "30",
         idCat:"2"
     },
     {
@@ -26,6 +29,7 @@ const misproductos = [
         nombre: 'Cinturón Lumbar Crossfit',
         precio: '$9000',
         img: "https://http2.mlstatic.com/D_NQ_NP_2X_880584-MLA53490779036_012023-F.webp",
+        stock: "30",
         idCat:"2"
     },
     {
@@ -33,6 +37,7 @@ const misproductos = [
         nombre: 'Pelota de ejercicio',
         precio: '$5000',
         img: "https://http2.mlstatic.com/D_NQ_NP_2X_650447-MLA31115685820_062019-F.webp",
+        stock: "30",
         idCat:"3"
     },
     {
@@ -40,6 +45,7 @@ const misproductos = [
         nombre: 'Chaleco 12kg',
         precio: '$12000',
         img: "https://http2.mlstatic.com/D_NQ_NP_2X_612396-MLA51641334639_092022-F.webp",
+        stock: "30",
         idCat:"3"
     },
     {
@@ -47,6 +53,7 @@ const misproductos = [
         nombre: 'Cinturón Lumbar Crossfit',
         precio: '$9000',
         img: "https://http2.mlstatic.com/D_NQ_NP_2X_880584-MLA53490779036_012023-F.webp",
+        stock: "30",
         idCat:"3"
     },
     {
@@ -54,6 +61,7 @@ const misproductos = [
         nombre: 'Pelota de ejercicio',
         precio: '$5000',
         img: "https://http2.mlstatic.com/D_NQ_NP_2X_650447-MLA31115685820_062019-F.webp",
+        stock: "30",
         idCat:"3"
     },
     

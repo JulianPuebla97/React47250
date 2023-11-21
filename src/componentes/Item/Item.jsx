@@ -14,7 +14,7 @@ export const Item = ({id,nombre,precio,img,stock}) => {
                 <p>ID {id}</p>
                 <p>Stock: {stock} </p>
                 <Link to={`/item/${id}`} className='detalles-product'> Ver Detalles</Link>
-                <button className="add-to-cart-button">Agregar al Carrito</button>
+                
 
                 
             </div>
