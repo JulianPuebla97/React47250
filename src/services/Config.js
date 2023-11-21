@@ -3,7 +3,7 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDObuYHneDBnyY-xPsVLPb2OT3EpDt9Wp4",
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
     authDomain: "react-47250-final-puebla.firebaseapp.com",
     projectId: "react-47250-final-puebla",
     storageBucket: "react-47250-final-puebla.appspot.com",
@@ -19,3 +19,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 export { db };
+//"AIzaSyDObuYHneDBnyY-xPsVLPb2OT3EpDt9Wp4",//

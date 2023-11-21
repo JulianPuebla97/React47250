@@ -11,6 +11,11 @@
 .carrito-inicio {
     text-align: center;
     margin: 20px auto;
+    margin-top: 100px;
+}
+.carrito-boton{
+    text-decoration: none;
+    color: black;
 }
 
 .total,
